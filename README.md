@@ -7,8 +7,8 @@ make sure to update the matchers to match where ever your invidious instance is
 
 ### desktop
 
-![screenshot](https://github.com/user-attachments/assets/f5f51a9a-9b39-4578-bda2-9fbaa5933246)
+<img src="https://github.com/user-attachments/assets/f5f51a9a-9b39-4578-bda2-9fbaa5933246" width="700px">
 
 ### mobile
 
-![mobile](https://github.com/user-attachments/assets/e93db539-113e-4603-bd4c-e53c09eea2ac)
+<img src="https://github.com/user-attachments/assets/e93db539-113e-4603-bd4c-e53c09eea2ac" width="300px">
