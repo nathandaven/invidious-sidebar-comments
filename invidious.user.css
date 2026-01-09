@@ -5,7 +5,7 @@
 @description    invidious sidebar comments
 @author         Me
 ==/UserStyle== */
-@-moz-document domain("127.0.0.1:31008") {
+@-moz-document domain("http://127.0.0.1:31008/watch*") {
     #contents {
         max-width: 80vw;
         margin: 0;
