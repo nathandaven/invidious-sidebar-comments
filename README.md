@@ -17,7 +17,7 @@ stylesheet and userscript top move comments to the right sidebar and related vid
 
 ### block shorts
 
-oh, and hide shorts using this ublock css via https://github.com/iv-org/invidious/issues/2585#issuecomment-2635861528
+oh, and hide shorts using this ublock filter via https://github.com/iv-org/invidious/issues/2585#issuecomment-2635861528
 
 ```
 instance.tld##div.pure-u-md-1-4.pure-u-1:has(.bottom-right-overlay):not(:has(.length))
