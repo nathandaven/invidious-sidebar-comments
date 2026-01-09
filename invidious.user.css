@@ -1,0 +1,77 @@
+/* ==UserStyle==
+@name           individous
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    invidious sidebar comments
+@author         Me
+==/UserStyle== */
+@-moz-document domain("127.0.0.1:31008") {
+    #contents {
+        max-width: 80vw;
+        margin: 0;
+    }
+
+    #comments {
+        width: 20vw;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+        gap: 39px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: unset;
+    }
+
+
+    #contents > .pure-g :nth-child(2).pure-u-lg-3-5 {
+        width: 80%;
+    }
+
+    #comments > div:first-of-type {
+        display: none;
+    }
+
+    @media (max-width: 1282px) {
+        #comments {
+            margin: auto;
+            width: 100vw;
+            overflow-y: unset;
+            display: none !important;
+        }
+
+        #contents {
+            margin: auto !important;
+        }
+    }
+
+    #contents > .pure-g:not(.navbar) :nth-child(3):not(.pure-control-group) {
+        width: 25vw;
+        margin: 0;
+    }
+
+    #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: min-content;
+    }
+
+    #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box > div:first-child {
+        grid-column: 1 / -1;
+        grid-auto-rows: min-content;
+    }
+
+    @media (max-width: 768px) {
+        #comments {
+            display: block !important;
+            max-width: 100vw !important;
+            height: 50vh !important;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            scrollbar-width: unset;
+        }
+    }
+}
