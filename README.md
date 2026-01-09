@@ -1,9 +1,11 @@
 # invidious-sidebar-comments
 stylesheet and userscript top move comments to the right sidebar and related videos below (very hacky)
 
-use stylus to install the stylesheet, and tampermonkey to install the userscript.
+### install
 
-make sure to update the matchers to match where ever your invidious instance is
+* use stylus to install the stylesheet, and tampermonkey to install the userscript.
+
+* make sure to update the matchers to match where ever your invidious instance is
 
 ### desktop
 
@@ -12,6 +14,8 @@ make sure to update the matchers to match where ever your invidious instance is
 ### mobile
 
 <img src="https://github.com/user-attachments/assets/e93db539-113e-4603-bd4c-e53c09eea2ac" width="300px">
+
+### block shorts
 
 oh, and hide shorts using this ublock css via https://github.com/iv-org/invidious/issues/2585#issuecomment-2635861528
 
