@@ -47,20 +47,20 @@
         }
     }
 
+    #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box > div:first-child {
+        grid-column: 1 / -1;
+        grid-auto-rows: min-content;
+    }
+
     #contents > .pure-g:not(.navbar) :nth-child(3):not(.pure-control-group) {
-        width: 25vw;
+        width: 12.25vw;
         margin: 0;
     }
 
     #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 10px;
-        grid-auto-rows: min-content;
-    }
-
-    #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box > div:first-child {
-        grid-column: 1 / -1;
         grid-auto-rows: min-content;
     }
 
@@ -72,6 +72,31 @@
             padding-left: 10vw;
             padding-right: 10vw;
             scrollbar-width: unset;
+        }
+
+        #contents > .pure-g:not(.navbar) :nth-child(3):not(.pure-control-group) {
+            width: 25.5vw;
+            margin: 0;
+        }
+
+        #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            grid-auto-rows: min-content;
+        }
+    }
+
+    @media (max-width: 500px) {
+        #contents > .pure-g:not(.navbar) :nth-child(3):not(.pure-control-group) {
+            width: unset;
+            margin: 0;
+        }
+        #contents > .pure-g:not(.navbar) :nth-child(3) > div.h-box {
+            display: unset;
+            grid-template-columns: unset;
+            gap: 10px;
+            grid-auto-rows: min-content;
         }
     }
 }
